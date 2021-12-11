@@ -1,0 +1,52 @@
+body{
+    font-family: monospace;
+    color:black;
+    background-color: whitesmoke;
+}
+#contenedor{
+    margin: 0 auto;
+}
+nav{
+    height: 20vh;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+nav ul li:hover{
+    background-color: gainsboro;
+}
+img{
+    width: 25vw;
+    height: 25vh;
+}
+p{
+    padding: 2em;
+}
+.logo{
+    width: 5vw;
+    height: 8vh;
+}
+.titulo-inicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.f-blanco{
+    background-color: white;
+    color: black;
+}
+.f-negro{
+    background-color: black;
+    color: white;
+}
+#footer{
+    display: flex;
+    flex-direction: row;
+}
