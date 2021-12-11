@@ -9,10 +9,14 @@ body{
 nav{
     height: 20vh;
 }
-nav ul{
+nav ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+ul a{
+    color: black;
+    text-decoration: none;
 }
 nav ul li{
     list-style: none;
@@ -45,8 +49,10 @@ p{
 .f-negro{
     background-color: black;
     color: white;
+
 }
 #footer{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
