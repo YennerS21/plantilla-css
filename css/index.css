@@ -1,47 +1,37 @@
-body{
+*{
+    background-color: whitesmoke;
     font-family: monospace;
     color:black;
-    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
 
 }
 #contenedor{
     margin: 0 auto;
 }
 header{
-    height: 10vh;
+    height: 14%;
 }
 nav{    
-    height: 20vh;
-}
-.listaMenu{
-    background-color:yellow;
-    position: sticky;
-    top: 0;
-}
-.sticky{
-    position: sticky;
-    top:0;
-    background: white;
+    height: 24%;
 }
 .navs ul {
     display: grid;
     grid-template-columns: repeat(5, 10em);
     justify-content: center;
 }
-ul a{
-    width: 99%;
-    color: black;
-    text-decoration: none;
-}
-ul a li{
-    list-style: none;
-    margin: 1rem;
-}
 ul li{
     list-style: none;
 }
-nav ul a:hover{
-    background-color: gainsboro;
+ul li a{
+    width: 99%;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+}
+nav ul li a:hover{
+    background: palegreen;
+    font-size: larger;
 }
 img{
     width: 25vw;
@@ -51,7 +41,7 @@ p{
     padding: 2em;
 }
 section{
-    padding-top: 3rem;
+    padding-top: 4rem;
 }
 #seccion2{
     display: flex;
