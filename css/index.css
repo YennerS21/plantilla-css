@@ -1,5 +1,3 @@
-
-
 section{
     /* background: palevioletred; */
     width: 90%;
@@ -70,7 +68,6 @@ section{
     main{
         display: grid;
         width: 100%;
-        background: aquamarine;
         justify-content: center;
     }
     .logo{
@@ -81,19 +78,17 @@ section{
         margin: 0 auto;
     }
     header{
-        background: rosybrown;
+        background: #61C355;
     }
     header .banner-header{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        background: green;
         height: 150px;
         width: 100%;
     }
     nav{
-        background: royalblue;
     }
     nav .navs ul {
         display: block;
@@ -127,7 +122,6 @@ section{
     main{
         display: grid;
         width: 100%;
-        background: aquamarine;
         justify-content: center;
     }
     .logo{
@@ -138,19 +132,16 @@ section{
         margin: 0 auto;
     }
     header{
-        background: rosybrown;
     }
     header .banner-header{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        background: green;
         height: 150px;
         width: 100%;
     }
     nav{
-        background: royalblue;
         height: 35px;
     }
     nav .navs ul {
@@ -189,7 +180,6 @@ section{
     main{
         display: grid;
         width: 100%;
-        background: aquamarine;
         justify-content: center;
     }
     .logo{
@@ -199,20 +189,27 @@ section{
     #contenedor{
         margin: 0 auto;
     }
+    #seccion2{
+        display: grid;
+        place-items: center;
+        background: #55C3B7;
+        width: 100%;
+    }
+    #seccion2 > .container{
+        width: 75%;
+    }
     header{
-        background: rosybrown;
+        background: #55C3B7;
     }
     header .banner-header{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        background: green;
         height: 150px;
         width: 100%;
     }
     nav{
-        background: royalblue;
         height: 35px;
     }
     nav .navs ul {
@@ -236,5 +233,8 @@ section{
     img{
         width: 99%;
         height: 99%;
+    }
+    #footer{
+        background: #55C3B7;
     }
 }
