@@ -5,9 +5,39 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    text-decoration: none;
 }
 header{
     background: #55C3B7;
+}
+.banner-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    width: 85px;
+    height: 85px;
+}
+nav{
+    background: #96f8ed;
+    position: sticky;
+    height: 50px;
+    top: 0;
+}
+nav .menu-pagina ul{
+    display: grid;
+    grid-template-columns: repeat(5, 10%);
+    justify-content: center;
+    height: 50px;
+}
+nav .menu-pagina ul li{
+    display: grid;
+    align-content: space-around;
+    justify-content: center;
+}
+nav .menu-pagina ul li:hover{
+    background: #92d4cd;
 }
 section .contenedor p{
     padding: 2%;
@@ -15,153 +45,45 @@ section .contenedor p{
 section .contenedor h1{
     padding: 2%;
 }
+#seccion1 .seccion1-multimedia{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+#seccion2{
+    background: #55C3B7;
+}
+#seccion2 .contenedor div{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+.plato-menu{
+    padding: 5%;
+}
+#seccion3 form{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 3%;
+} 
 footer{
     background: #55C3B7;
+}
+footer .contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .contenedor{
     margin: 0 auto;
     width: 90%;
     padding: 2%;
 }
-@media (max-width: 555px) {
-    .logo{
-        width: 50px;
-        height: 50px;
-    }
-    header .banner-header{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        height: 150px;
-        width: 100%;
-    }
-    nav .menu-pagina ul {
+@media (max-width: 750px) {
+    nav .menu-pagina ul{
         display: block;
-    }
-    nav .menu-pagina ul li{
-        text-align: center;
-    }
-    nav .menu-pagina ul li:hover{
-        background: #9ac9c4;
-    }
-    nav .menu-pagina ul li a{
-        text-decoration: none;
-    }
-    img{
-        width: 80%;
-        height: 80%;
-    }
-    footer .contenedor{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-@media (min-width: 556px){
-    
-    .logo{
-        width: 75px;
         height: 75px;
-    }
-    header .banner-header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        height: 150px;
-        width: 100%;
-    }
-    nav .menu-pagina ul {
-        display: grid;
-        justify-content: center;
-    }
-    nav .menu-pagina ul li{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        list-style: none;
-        height: 34px;
-        width: 134px;
-    }
-    nav .menu-pagina ul li:hover{
-        background: #9ac9c4;
-    }
-    nav .menu-pagina ul li a{
-        text-decoration: none;
-    }
-    img{
-        width: 99%;
-        height: 99%;
-    }
-}
-@media (min-width: 800px) {
-    
-    .logo{
-        width: 85px;
-        height: 85px;
-    }
-    header .banner-header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        height: 150px;
-        width: 100%;
-    }
-    nav .menu-pagina ul {
-        display: flex;
-    }
-    nav .menu-pagina ul li{
-        height: 40px;
-        width: 140px;
-        justify-content: center;
-    }
-    nav .menu-pagina ul li:hover{
-        background: #9ac9c4;
-    }
-    nav .menu-pagina ul li a{
-        
-        text-decoration: none;
-    }
-    img{
-        width: 99%;
-        height: 99%;
-    }
-    main{
-        display: grid;
-        width: 100%;
-        justify-content: center;
-    }
-    section{
-        width: 100%;
-    }
-    #seccion1 .seccion1-multimedia{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        justify-content: space-evenly;
-        padding: 5%;
-    }
-    #seccion2{
-        background: #55C3B7;
-    }
-    #seccion2 .contenedor div{
-        display: grid;
-        grid-template-columns: repeat(2,50%);
-    }
-    .plato-menu{
-        padding: 5%;
-    }
-    #seccion3 form{
-        width: 75%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0 auto;
-        padding: 3%;
-    }
-    footer .contenedor{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
     }
 }
