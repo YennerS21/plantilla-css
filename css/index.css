@@ -1,137 +1,67 @@
-section{
-    /* background: palevioletred; */
-    width: 90%;
-    margin: 2% auto;
+*{
+    font-family: monospace;
+    color:black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
 }
-#seccion1{
-    /* background: firebrick; */
+header{
+    background: #55C3B7;
 }
-#seccion1 > p{
-    /* background: tomato; */
-    margin: 3% auto;
-    padding: 4%;
+section .contenedor p{
+    padding: 2%;
 }
-#seccion1 div{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-content: space-evenly;
-    padding: 5%;
+section .contenedor h1{
+    padding: 2%;
 }
-#seccion2 div{
-    /* background: lawngreen; */
-    display: grid;
-    grid-template-columns: repeat(2,50%);
+footer{
+    background: #55C3B7;
 }
-.plato-menu{
-    padding: 6%;
-}
-#seccion2 p {
-    padding: 5%;
-}
-#seccion3{
-    /* background: lightgreen; */
-}
-#seccion3 > p {
-    padding: 10%;
-}
-#seccion3 form{
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    /* background: royalblue; */
-    justify-content: center;
+.contenedor{
     margin: 0 auto;
-    padding: 3%;
-}
-#seccion4 {
-    /* background: greenyellow; */
-}
-#seccion4 div p{
-    padding: 4%;
-}
-#footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 8%;
+    width: 90%;
+    padding: 2%;
 }
 @media (max-width: 555px) {
-    *{
-        font-family: monospace;
-        color:black;
-        margin: 0;
-        font-size: 97%;
-        padding: 0.5%;
-        box-sizing: border-box;
-        list-style: none;
-    }
-    main{
-        display: grid;
-        width: 100%;
-        justify-content: center;
-    }
     .logo{
-        width: 85px;
-        height: 85px;
-    }
-    #contenedor{
-        margin: 0 auto;
-    }
-    header{
-        background: #61C355;
+        width: 50px;
+        height: 50px;
     }
     header .banner-header{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
         height: 150px;
         width: 100%;
     }
-    nav{
-    }
-    nav .navs ul {
+    nav .menu-pagina ul {
         display: block;
     }
-    nav ul li{
-        background: lightblue;
-        list-style: none;
-        width: 100%;
+    nav .menu-pagina ul li{
         text-align: center;
     }
-    nav ul li:hover{
-        font-size: larger;
+    nav .menu-pagina ul li:hover{
+        background: #9ac9c4;
     }
-    nav ul li a{
+    nav .menu-pagina ul li a{
         text-decoration: none;
     }
     img{
         width: 80%;
         height: 80%;
     }
+    footer .contenedor{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 @media (min-width: 556px){
-    *{
-        font-family: monospace;
-        color:black;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        list-style: none;
-    }
-    main{
-        display: grid;
-        width: 100%;
-        justify-content: center;
-    }
+    
     .logo{
-        width: 85px;
-        height: 85px;
-    }
-    #contenedor{
-        margin: 0 auto;
-    }
-    header{
+        width: 75px;
+        height: 75px;
     }
     header .banner-header{
         display: flex;
@@ -141,25 +71,22 @@ section{
         height: 150px;
         width: 100%;
     }
-    nav{
-        height: 35px;
-    }
-    nav .navs ul {
+    nav .menu-pagina ul {
         display: grid;
-        grid-template-columns: repeat(5, 18%);
         justify-content: center;
     }
-    nav ul li{
+    nav .menu-pagina ul li{
         display: flex;
         align-items: center;
+        justify-content: center;
         list-style: none;
         height: 34px;
         width: 134px;
     }
-    nav ul li:hover{
-        font-size: larger;
+    nav .menu-pagina ul li:hover{
+        background: #9ac9c4;
     }
-    nav ul li a{
+    nav .menu-pagina ul li a{
         text-decoration: none;
     }
     img{
@@ -167,39 +94,11 @@ section{
         height: 99%;
     }
 }
-@media (min-width: 800px){
-    /*Banner and nav bar*/
-    *{
-        font-family: monospace;
-        color:black;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        list-style: none;
-    }
-    main{
-        display: grid;
-        width: 100%;
-        justify-content: center;
-    }
+@media (min-width: 800px) {
+    
     .logo{
         width: 85px;
         height: 85px;
-    }
-    #contenedor{
-        margin: 0 auto;
-    }
-    #seccion2{
-        display: grid;
-        place-items: center;
-        background: #55C3B7;
-        width: 100%;
-    }
-    #seccion2 > .container{
-        width: 75%;
-    }
-    header{
-        background: #55C3B7;
     }
     header .banner-header{
         display: flex;
@@ -209,32 +108,60 @@ section{
         height: 150px;
         width: 100%;
     }
-    nav{
-        height: 35px;
+    nav .menu-pagina ul {
+        display: flex;
     }
-    nav .navs ul {
-        display: grid;
-        grid-template-columns: repeat(5, 10%);
+    nav .menu-pagina ul li{
+        height: 40px;
+        width: 140px;
         justify-content: center;
     }
-    nav ul li{
-        display: flex;
-        align-items: center;
-        list-style: none;
-        height: 34px;
-        width: 134px;
+    nav .menu-pagina ul li:hover{
+        background: #9ac9c4;
     }
-    nav ul li:hover{
-        font-size: larger;
-    }
-    nav ul li a{
+    nav .menu-pagina ul li a{
+        
         text-decoration: none;
     }
     img{
         width: 99%;
         height: 99%;
     }
-    #footer{
+    main{
+        display: grid;
+        width: 100%;
+        justify-content: center;
+    }
+    section{
+        width: 100%;
+    }
+    #seccion1 .seccion1-multimedia{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: space-evenly;
+        padding: 5%;
+    }
+    #seccion2{
         background: #55C3B7;
+    }
+    #seccion2 .contenedor div{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+    }
+    .plato-menu{
+        padding: 5%;
+    }
+    #seccion3 form{
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 3%;
+    }
+    footer .contenedor{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 }
