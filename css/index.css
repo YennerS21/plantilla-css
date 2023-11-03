@@ -22,21 +22,22 @@ header{
 nav{
     background: #96f8ed;
     position: sticky;
-    height: 50px;
     top: 0;
+    height: 50px;
 }
 nav .menu-pagina ul{
     display: grid;
     grid-template-columns: repeat(5, 10%);
     justify-content: center;
-    height: 50px;
 }
 nav .menu-pagina ul li{
     display: grid;
     align-content: space-around;
-    justify-content: center;
 }
-nav .menu-pagina ul li:hover{
+nav .menu-pagina ul li a{
+    padding: 16px 16px;
+}
+nav .menu-pagina ul li a:hover{
     background: #92d4cd;
 }
 section .contenedor p{
@@ -84,6 +85,9 @@ footer .contenedor{
 @media (max-width: 750px) {
     nav .menu-pagina ul{
         display: block;
-        height: 75px;
+        height: 100%;
+    }
+    nav .menu-pagina ul li{
+        height: 100%;
     }
 }
