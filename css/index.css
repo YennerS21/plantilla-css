@@ -40,6 +40,7 @@ nav .menu-pagina ul li a{
 nav .menu-pagina ul li a:hover{
     background: #92d4cd;
 }
+
 section .contenedor p{
     padding: 2%;
 }
@@ -83,11 +84,21 @@ footer .contenedor{
     padding: 2%;
 }
 @media (max-width: 750px) {
+    
+    nav{
+        display: inline;
+        
+    }
     nav .menu-pagina ul{
         display: block;
-        height: 100%;
     }
     nav .menu-pagina ul li{
-        height: 100%;
+        display: block;
+        text-align: center;
+    }
+    nav .menu-pagina ul li a{
+        background: #96f8ed;
+        display: block;
+        padding: 10px;
     }
 }
