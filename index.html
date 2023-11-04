@@ -21,7 +21,10 @@
     </header>
     <nav>
         <div class="menu-pagina">
-            <ul>
+            <div class="icono-menu" id="icono">
+                <span>&#9776;</span> 
+            </div>
+            <ul id="menu">
                 <li>
                     <a href="#inicio">
                         Inicio
@@ -298,5 +301,21 @@
             </ul>
         </div>
     </footer>
+    <script >
+        const icono = document.getElementById("icono");
+        
+        icono.addEventListener('click', function () {
+            const menu = document.getElementById("menu");
+            let estilos = window.getComputedStyle(menu);
+            if (estilos.display==="none") {
+                menu.style.display="block";
+                console.log(estilos.top);
+            }else{
+                menu.style.display="none";
+                console.log(estilos.display);
+                console.log(estilos.top);
+            }
+        });
+    </script>
 </body>
 </html>
