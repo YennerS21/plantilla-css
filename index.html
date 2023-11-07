@@ -2,9 +2,6 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="css/index.css">
     <title>Restaurante Huilense</title>
 </head>
@@ -19,34 +16,34 @@
             </div>
         </div>
     </header>
-    <nav>
+    <nav class="sticky">
         <div class="menu-pagina">
             <div class="icono-menu" id="icono">
                 <span>&#9776;</span> 
             </div>
-            <ul id="menu">
-                <li>
-                    <a href="#inicio">
+            <ul class="listaMenu" id="menu">
+                <li class="elementoLista">
+                    <a class="relleno-16" href="#inicio">
                         Inicio
                     </a>
                 </li>
-                <li>
-                    <a href="#seccion2">
+                <li class="elementoLista">
+                    <a class="relleno-16" href="#seccion2">
                         Menú
                     </a>
                 </li>
-                <li>
-                    <a href="#seccion3">
+                <li class="elementoLista">
+                    <a class="relleno-16" href="#seccion3">
                         Reservar
                     </a>
                 </li>
-                <li>
-                    <a href="#seccion4">
+                <li class="elementoLista">
+                    <a class="relleno-16" href="#seccion4">
                         Historia
                     </a>
                 </li>
-                <li>
-                    <a href="#footer">
+                <li class="elementoLista">
+                    <a class="relleno-16" href="#footer">
                         Contacto
                     </a>
                 </li>
@@ -308,12 +305,13 @@
             const menu = document.getElementById("menu");
             let estilos = window.getComputedStyle(menu);
             if (estilos.display==="none") {
-                menu.style.display="block";
-                console.log(estilos.top);
+                // menu.style.display="block";
+                menu.classList.remove('listaMenu');
+                menu.classList.add('mostrar');
             }else{
-                menu.style.display="none";
-                console.log(estilos.display);
-                console.log(estilos.top);
+                // menu.style.display="none";
+                menu.classList.remove('mostrar');
+                menu.classList.add('listaMenu');
             }
         });
     </script>

@@ -19,25 +19,24 @@ header{
     width: 85px;
     height: 85px;
 }
-nav{
+.sticky{
     background: #96f8ed;
     position: sticky;
     top: 0;
     height: 50px;
 }
-nav .menu-pagina ul{
+.listaMenu{
     display: grid;
     grid-template-columns: repeat(5, 10%);
     justify-content: center;
 }
-nav .menu-pagina ul li{
-    display: grid;
-    align-content: space-around;
+.elementoLista{
+    display: flex;
 }
-nav .menu-pagina ul li a{
+.relleno-16{
     padding: 16px 16px;
 }
-nav .menu-pagina ul li a:hover{
+.relleno-16:hover{
     background: #92d4cd;
 }
 
@@ -86,22 +85,34 @@ footer .contenedor{
 #icono{
     display: none;
 }
+.mostrar{
+    display: grid;
+    grid-template-columns: repeat(5, 10%);
+    justify-content: center;
+}
 @media (max-width: 750px) {
+    .mostrar{
+        display: block;
+        background: red;
+    }
     #icono{
         display: block;
     }
-    #menu{
+    /* #menu{
         display: none;
-    }
+    } */
     nav{
         height: 45px;
         padding-top: 14px;
     }
-    nav .menu-pagina ul li{
+    .listaMenu{
+        display: none;
+    }
+    .elementoLista{
         display: block;
         text-align: center;
     }
-    nav .menu-pagina ul li a{
+    .relleno-16{
         background: #96f8ed;
         display: block;
         padding: 10px;
@@ -110,4 +121,7 @@ footer .contenedor{
         text-align: center;
         cursor: pointer;
     }
+    
+}
+@media (min-width: 751px){
 }
