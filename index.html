@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <title>Restaurante Huilense</title>
 </head>
 <body>
@@ -302,14 +303,13 @@
         const icono = document.getElementById("icono");
         
         icono.addEventListener('click', function () {
-            const menu = document.getElementById("menu");
+            let menu = document.getElementById("menu");
             let estilos = window.getComputedStyle(menu);
+            console.log(estilos.display);
             if (estilos.display==="none") {
-                // menu.style.display="block";
                 menu.classList.remove('listaMenu');
                 menu.classList.add('mostrar');
             }else{
-                // menu.style.display="none";
                 menu.classList.remove('mostrar');
                 menu.classList.add('listaMenu');
             }

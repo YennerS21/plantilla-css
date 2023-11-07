@@ -10,6 +10,56 @@
 header{
     background: #55C3B7;
 }
+section .contenedor p{
+    padding: 2%;
+}
+section .contenedor h1{
+    padding: 2%;
+}
+footer{
+    background: #55C3B7;
+}
+footer .contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#seccion1 .seccion1-multimedia{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+#seccion2{
+    background: #55C3B7;
+}
+#seccion2 .contenedor div{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+#seccion3 form{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 3%;
+} 
+#icono{
+    display: none;
+}
+.contenedor{
+    margin: 0 auto;
+    width: 90%;
+    padding: 2%;
+}
+.plato-menu{
+    padding: 5%;
+}
+.mostrar{
+    display: grid;
+    grid-template-columns: repeat(5, 10%);
+    justify-content: center;
+}
 .banner-header{
     display: flex;
     justify-content: space-around;
@@ -39,71 +89,17 @@ header{
 .relleno-16:hover{
     background: #92d4cd;
 }
-
-section .contenedor p{
-    padding: 2%;
-}
-section .contenedor h1{
-    padding: 2%;
-}
-#seccion1 .seccion1-multimedia{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-content: space-evenly;
-    padding: 5%;
-}
-#seccion2{
-    background: #55C3B7;
-}
-#seccion2 .contenedor div{
-    display: grid;
-    grid-template-columns: repeat(2,50%);
-}
-.plato-menu{
-    padding: 5%;
-}
-#seccion3 form{
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 3%;
-} 
-footer{
-    background: #55C3B7;
-}
-footer .contenedor{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.contenedor{
-    margin: 0 auto;
-    width: 90%;
-    padding: 2%;
-}
-#icono{
-    display: none;
-}
-.mostrar{
-    display: grid;
-    grid-template-columns: repeat(5, 10%);
-    justify-content: center;
-}
 @media (max-width: 750px) {
-    .mostrar{
-        display: block;
-        background: red;
+    nav{
+        height: 45px;
+        padding-top: 14px;
     }
     #icono{
         display: block;
     }
-    /* #menu{
-        display: none;
-    } */
-    nav{
-        height: 45px;
-        padding-top: 14px;
+    .mostrar{
+        display: block;
+        background: red;
     }
     .listaMenu{
         display: none;
@@ -122,6 +118,4 @@ footer .contenedor{
         cursor: pointer;
     }
     
-}
-@media (min-width: 751px){
 }
