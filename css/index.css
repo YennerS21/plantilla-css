@@ -9,7 +9,13 @@
 }
 header{
     background: #55C3B7;
+    min-height: 18vh;
+    max-height: 18vh;
 }
+main{
+    display: flex;
+    flex-direction: column;
+} 
 section .contenedor p{
     padding: 2%;
 }
@@ -23,27 +29,28 @@ footer .contenedor{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-#seccion1 .seccion1-multimedia{
+.seccion1-multimedia{
     display: grid;
     grid-template-columns: 50% 50%;
     justify-content: space-evenly;
     padding: 5%;
 }
+.titulo-seccion{
+    margin: 5% 0;
+}
 #seccion2{
     background: #55C3B7;
 }
-#seccion2 .contenedor div{
+.section2-menu{
     display: grid;
     grid-template-columns: repeat(2,50%);
 }
-#seccion3 form{
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
+.seccion-formulario{
+    display: grid;
     padding: 3%;
-} 
+    margin: 1px;
+    justify-content: center;
+}
 #icono{
     display: none;
 }
@@ -61,13 +68,18 @@ footer .contenedor{
     justify-content: center;
 }
 .banner-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 18vh;
+}
+.header-item{
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
 }
 .logo{
-    width: 85px;
-    height: 85px;
+    height: 90px;
+    width: 90px;
 }
 .sticky{
     background: #96f8ed;
@@ -89,6 +101,10 @@ footer .contenedor{
 .relleno-16:hover{
     background: #92d4cd;
 }
+.footer-seccion{
+    display: flex;
+    justify-content: center;
+}
 @media (max-width: 750px) {
     nav{
         height: 45px;
@@ -96,6 +112,15 @@ footer .contenedor{
     }
     #icono{
         display: block;
+    }
+    .seccion1-multimedia{
+        display: flex;
+        flex-direction: column;
+    }
+    .section2-menu{
+        background: #55C3B7;
+        display: flex;
+        flex-direction: column;
     }
     .mostrar{
         display: block;
@@ -117,5 +142,7 @@ footer .contenedor{
         text-align: center;
         cursor: pointer;
     }
-    
+    footer .contenedor{
+        display: grid;
+    }
 }
