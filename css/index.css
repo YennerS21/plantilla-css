@@ -2,6 +2,7 @@
     font-family: monospace;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 /* ElementosHTML */
 header{
@@ -11,6 +12,7 @@ header{
     place-items: center;
 }
 nav{
+    background: goldenrod;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -42,6 +44,7 @@ footer > .contenedor{
     display: block;
     text-align: center;
     width: 150px;
+    padding: 10px 0;
 }
 .logo{
     width: 12vw;
