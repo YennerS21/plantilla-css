@@ -1,95 +1,63 @@
-body{
+*{
     font-family: monospace;
-    color:black;
-    background-color: whitesmoke;
-
+    margin: 0;
+    padding: 0;
 }
-#contenedor{
-    margin: 0 auto;
-}
+/* ElementosHTML */
 header{
-    height: 10vh;
-}
-nav{    
-    height: 20vh;
-}
-.listaMenu{
-    background-color:yellow;
-    position: sticky;
-    top: 0;
-}
-.sticky{
-    position: sticky;
-    top:0;
-    background: white;
-}
-.navs ul {
     display: grid;
-    grid-template-columns: repeat(5, 10em);
-    justify-content: center;
+    grid-template-columns: auto auto;
+    height: 220px;
+    place-items: center;
 }
-ul a{
-    width: 99%;
-    color: black;
-    text-decoration: none;
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-ul a li{
-    list-style: none;
-    margin: 1rem;
-}
-ul li{
-    list-style: none;
-}
-nav ul a:hover{
-    background-color: gainsboro;
-}
-img{
-    width: 25vw;
-    height: 25vh;
-}
-p{
-    padding: 2em;
+a:hover{
+    background: firebrick;
 }
 section{
-    padding-top: 3rem;
+    padding: 4% 0;
+    height: 610px;
 }
+footer > .contenedor{
+    display: flex;
+    place-content: space-between;
+}
+/* ID */
 #seccion2{
     display: flex;
     flex-direction: column;
 }
-#seccion2 div{
-    background-color: aqua;
-    display: grid;
-    grid-template-columns: auto auto;
-
+/* Clases */
+/* Barra de navegacion */
+.menu{
+    display: flex;
+    list-style: none;
+    place-items: center;
 }
-#seccion4 div{
-    padding: 0 2em;
-    margin: 0.2rem;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content:  center;
+.item-menu{
+    display: block;
+    text-align: center;
+    width: 150px;
 }
 .logo{
-    width: 5vw;
-    height: 8vh;
+    width: 12vw;
+    height: 15vh;
 }
-.titulo-inicio{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.f-blanco{
-    background-color: white;
-    color: black;
-}
-.f-negro{
-    background-color: black;
-    color: white;
+/* fin barra navegacion */
 
+
+.contenedor{
+    width: 80%;
+    margin: 0 auto;
 }
-#footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.titulo-seccion{
+    padding-bottom: 40px;
+}
+.sticky{
+    position: sticky;
+    top:0;
 }
