@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    list-style: none;
+    color: black;
 }
 /* ElementosHTML */
 header{
@@ -13,16 +15,21 @@ header{
 }
 nav{
     background: goldenrod;
+}
+nav div{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 a:hover{
-    background: firebrick;
+    background: rgba(96, 34, 178, 0.404);
 }
 section{
     padding: 4% 0;
     height: 610px;
+}
+article{
+    padding: 15px 0;
 }
 footer > .contenedor{
     display: flex;
@@ -39,16 +46,37 @@ footer > .contenedor{
     display: flex;
     list-style: none;
     place-items: center;
+    height: 100%;
+}
+.menu-desplegable{
+    display: block;
+}
+.menu > span{
+    font-size: xx-large;
 }
 .item-menu{
-    display: block;
-    text-align: center;
-    width: 150px;
-    padding: 10px 0;
+    border-right: 0.2cap solid rgba(26, 21, 102, 0);
+    width: 125px;
+    height: 40px;
 }
-.logo{
-    width: 12vw;
-    height: 15vh;
+.item-hiper{
+    display: block;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+}
+.item-logo{
+    background: rgba(92, 194, 92, 0.247);
+    width: 25px;
+    height: 40px;
+}
+.logo-header{
+    width: 15vw;
+    height: 20vh;
+}
+.logo-footer{
+    width: 10vw;
+    height: 10vh;
 }
 /* fin barra navegacion */
 
@@ -63,4 +91,38 @@ footer > .contenedor{
 .sticky{
     position: sticky;
     top:0;
+}
+.icono-menu{
+    display: none;
+    padding: 10px 0;
+    place-items: center;
+}
+.icono-menu:hover{
+    cursor: pointer;
+}
+
+/* Pantalla media - 800  */
+@media(max-width: 800px){
+    nav div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .icono-menu{
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    .menu{
+        display: none;
+    }
+    .item-menu{
+        display: block;
+        width: 100%;
+    }
+    .menu > span{
+        font-size: larger;
+    }
 }

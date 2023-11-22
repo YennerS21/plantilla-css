@@ -11,7 +11,7 @@
 <body>
     <header>
         <div>
-            <img src="img/user-gb98ea149d_640.png" alt="" class="logo">
+            <img src="img/user-gb98ea149d_640.png" alt="" class="logo-header">
         </div>
         <div>
             <h1>Plantilla creada en HTML y CSS</h1>
@@ -19,46 +19,51 @@
     </header>
     <main>
         <nav class="sticky">
-            <ul class="menu">
-                <li class="item-menu">
-                    <a  
-                        href="#seccion1">
-                        Seccion 1
-                    </a>
-                </li>
-                <li class="item-menu">
-                    <a 
-                        href="#seccion2">
-                        Seccion 2
-                    </a>
-                </li>
-                <li class="item-menu">
-                    <a 
-                        href="#seccion3">
-                        Seccion 3
-                    </a>
-                </li>
-                <li class="item-menu">
-                    <a  
-                        href="#seccion4">
-                        Seccion 4
-                    </a>
-                </li>
-                <li class="item-menu">
-                    <a  
-                        href="#seccion5">
-                        Seccion 5
-                    </a>
-                </li>
-            </ul>
-            <ul class="menu">
-                <li class="item-logo">
-                    <span class="icon">&#128275;</span>
-                </li>
-                <li class="item-logo">
-                    <span class="icon">&#10133;</span>
-                </li>
-            </ul>
+            <div class="contenedor">
+                <div class="icono-menu" id="icono">
+                    <span>&#9776;</span> 
+                </div>
+                <ul class="menu menu-pagina" id="lista_menu">
+                    <li class="item-menu">
+                        <a  class="item-hiper"
+                            href="#seccion1">
+                            Seccion 1
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a  class="item-hiper"
+                            href="#seccion2">
+                            Seccion 2
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a class="item-hiper"
+                            href="#seccion3">
+                            Seccion 3
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a  class="item-hiper"
+                            href="#seccion4">
+                            Seccion 4
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a  class="item-hiper"  
+                            href="#seccion5">
+                            Seccion 5
+                        </a>
+                    </li>
+                </ul>
+                <ul class="menu menu-usuario">
+                    <li class="item-logo">
+                        <span class="icon item-hiper">&#128275;</span>
+                    </li>
+                    <li class="item-logo">
+                        <span class="icon item-hiper">&#10133;</span>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <section id="seccion1">
             <div class="contenedor">
@@ -72,6 +77,7 @@
                     </p>
                 </article>
                 <article>
+                    <h3>Titulo con etiqueta h3</h3>
                     <ul>
                         <li>tema1</li>
                         <li>tema2</li>
@@ -92,6 +98,7 @@
                     </p>
                 </article>
                 <article>
+                    <h3>Titulo h3</h3>
                     <ul>
                         <li>elemento1</li>
                         <li>elemento2</li>
@@ -122,6 +129,7 @@
                         Debitis perspiciatis facilis fugit optio sit nesciunt delectus 
                         magni hic totam, soluta qui quibusdam, vero architecto.
                     </p>
+                    <h4>Titulo con h4</h4>
                     <p>  
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                         Expedita voluptates corporis modi perspiciatis ipsa? 
@@ -221,7 +229,7 @@
     <footer>
         <div class="contenedor">
             <div >
-                <img src="img/user-gb98ea149d_640.png" alt="" class="logo">
+                <img src="img/user-gb98ea149d_640.png" alt="" class="logo-footer">
             </div>
             <ul>
                 <li>Politicas de privacidad</li>
@@ -236,5 +244,6 @@
             </ul>
         </div>
     </footer>
+    <script src="/js/events/index.js"></script>
 </body>
 </html>
