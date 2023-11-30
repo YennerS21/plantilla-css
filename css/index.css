@@ -14,7 +14,7 @@ header{
     place-items: center;
 }
 nav{
-    background: goldenrod;
+    background: rgba(32, 66, 218, 0.178);
 }
 nav div{
     display: flex;
@@ -79,8 +79,11 @@ footer > .contenedor{
     height: 10vh;
 }
 /* fin barra navegacion */
-
-
+.d-flex-row{display: flex; flex-direction: row;}
+.d-flex-column{
+    display: flex;
+    flex-direction: column;
+}
 .contenedor{
     width: 80%;
     margin: 0 auto;
@@ -91,6 +94,14 @@ footer > .contenedor{
 .sticky{
     position: sticky;
     top:0;
+}
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.galeria article{
+    display: flex;
+    flex-direction: column;
 }
 .icono-menu{
     display: none;
