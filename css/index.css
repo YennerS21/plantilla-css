@@ -94,7 +94,7 @@ footer .contenedor{
     height: 100%;
 }
 .lista-menu-desplegable{
-    display: block;
+    display: flex;
 }
 .elemento-lista{
     display: flex;
@@ -148,6 +148,12 @@ footer .contenedor{
         flex-direction: column;
         width: 100%;
         justify-content: center;
+    }
+    nav .contenedor{
+        width: 100%;
+    }
+    .lista-menu-desplegable{
+        display: block;
     }
     .lista-menu{
         display: none;
