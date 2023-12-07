@@ -17,41 +17,53 @@
 			</div>
 		</div>
 	</header>
-	<nav class="sticky">
-		<div class="menu-pagina">
-			<div class="icono-menu" id="icono">
-				<span>&#9776;</span> 
-			</div>
-			<ul class="listaMenu" id="menu">
-				<li class="elementoLista">
-					<a class="relleno-16" href="#inicio">
-						Inicio
-					</a>
-				</li>
-				<li class="elementoLista">
-					<a class="relleno-16" href="#seccion2">
-						Menú
-					</a>
-				</li>
-				<li class="elementoLista">
-					<a class="relleno-16" href="#seccion3">
-						Reservar
-					</a>
-				</li>
-				<li class="elementoLista">
-					<a class="relleno-16" href="#seccion4">
-						Historia
-					</a>
-				</li>
-				<li class="elementoLista">
-					<a class="relleno-16" href="#footer">
-						Contacto
-					</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
 	<main>
+        <nav class="sticky">
+            <div class="">
+                <div class="icono-menu" id="icono">
+                    <span>&#9776;</span> 
+                </div>
+                <ul class="lista-menu">
+                    <li class="elemento-lista">
+                        <a class="relleno-16" href="#inicio">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="elemento-lista">
+                        <a class="relleno-16" href="#seccion2">
+                            Menú
+                        </a>
+                    </li>
+                    <li class="elemento-lista">
+                        <a class="relleno-16" href="#seccion3">
+                            Reservar
+                        </a>
+                    </li>
+                    <li class="elemento-lista">
+                        <a class="relleno-16" href="#seccion4">
+                            Historia
+                        </a>
+                    </li>
+                    <li class="elemento-lista">
+                        <a class="relleno-16" href="#footer">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+                <ul class="lista-menu">
+                    <li class="elemento-lista">
+                        <a class="relleno-16" href="#">
+                            Login
+                        </a>
+                    </li>
+                    <li class="elemento-lista">
+                        <a class="relleno-16" href="#">
+                            Registrarse
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 		<section id="seccion1">
 			<div class="contenedor">
 				<h1 class="titulo-seccion">Sabores Huilenses Saludables</h1>
@@ -341,16 +353,20 @@
 	</footer>
 	<script >
 		const icono = document.getElementById("icono");
+		let [lista1, lista2] = document.getElementsByClassName("lista-menu");
 		icono.addEventListener('click', function () {
-			let menu = document.getElementById("menu");
-			let estilos = window.getComputedStyle(menu);
-			console.log(estilos.display);
-			if (estilos.display==="none") {
-				menu.classList.remove('listaMenu');
-				menu.classList.add('mostrar');
+			let  estilos1= window.getComputedStyle(lista1);
+			let  estilos2= window.getComputedStyle(lista2);
+			if (estilos1.display==="none" && estilos2.display==="none") {
+				lista1.classList.remove('lista-menu');
+				lista2.classList.remove('lista-menu');
+				lista1.classList.add('lista-menu-desplegable');
+				lista2.classList.add('lista-menu-desplegable');
 			}else{
-				menu.classList.remove('mostrar');
-				menu.classList.add('listaMenu');
+				lista1.classList.remove('lista-menu-desplegable');
+				lista2.classList.remove('lista-menu-desplegable');
+				lista1.classList.add('lista-menu');
+				lista2.classList.add('lista-menu');
 			}
 		});
 	</script>
